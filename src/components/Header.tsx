@@ -12,11 +12,18 @@ import {
   ChevronDown,
   Menu,
   X,
-  FileCode2,
   ShieldCheck,
   Send
 } from "lucide-react";
 import ConsultationModal from "./ConsultationModal";
+
+interface NavItem {
+  title: string;
+  href: string;
+  hasDropdown?: boolean;
+  badge?: string;
+  items?: { title: string; href: string }[];
+}
 
 export default function Header() {
   const pathname = usePathname();
@@ -24,7 +31,7 @@ export default function Header() {
   const [servicesDropdown, setServicesDropdown] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
-  const navLinks = [
+  const navLinks: NavItem[] = [
     { title: "Главная", href: "/" },
     {
       title: "Услуги",
@@ -46,7 +53,6 @@ export default function Header() {
     { title: "Проекты", href: "/proekty" },
     { title: "Полезные ресурсы", href: "/poleznye-resursy" },
     { title: "Контакты", href: "/kontakty" },
-    { title: "Тема WordPress", href: "/wordpress-theme", badge: "ТЗ" },
   ];
 
   return (

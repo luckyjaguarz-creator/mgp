@@ -11,8 +11,7 @@ import {
   ShieldCheck,
   FileText,
   Download,
-  ArrowUp,
-  FileCode2
+  ArrowUp
 } from "lucide-react";
 import ConsultationModal from "./ConsultationModal";
 
@@ -80,7 +79,7 @@ Email: info@mgp.ooo
                 </p>
               </div>
 
-              <div className="flex gap-2 pt-1">
+              <div className="flex flex-wrap gap-2 pt-1">
                 <button
                   type="button"
                   onClick={copyRequisites}
@@ -91,11 +90,11 @@ Email: info@mgp.ooo
                 </button>
 
                 <Link
-                  href="/wordpress-theme"
-                  className="px-3 py-1.5 bg-slate-900 hover:bg-orange-950/60 text-orange-300 hover:text-orange-200 text-xs rounded-lg transition-colors border border-orange-500/30 flex items-center gap-1.5"
+                  href="/kontakty"
+                  className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-xs rounded-lg transition-colors border border-slate-700 flex items-center gap-1.5"
                 >
-                  <FileCode2 className="w-3.5 h-3.5 text-orange-400" />
-                  <span>WP тема mgp-theme</span>
+                  <MapPin className="w-3.5 h-3.5 text-orange-400" />
+                  <span>Схема проезда</span>
                 </Link>
               </div>
             </div>
@@ -183,11 +182,6 @@ Email: info@mgp.ooo
                 <li>
                   <Link href="/politika-konfidencialnosti" className="hover:text-orange-400 transition-colors">
                     Политика конфиденциальности (152-ФЗ)
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/wordpress-theme" className="hover:text-orange-400 transition-colors text-orange-400 font-semibold">
-                    Скачать WordPress тему (ТЗ)
                   </Link>
                 </li>
               </ul>
