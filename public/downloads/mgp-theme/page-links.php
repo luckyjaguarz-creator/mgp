@@ -1,0 +1,1 @@
+<?php get_header(); ?><h1>Полезные ресурсы</h1><?php get_footer(); ?>

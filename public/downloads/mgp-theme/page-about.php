@@ -1,0 +1,1 @@
+<?php get_header(); ?><h1>О компании</h1><?php get_footer(); ?>

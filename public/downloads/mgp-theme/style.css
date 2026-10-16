@@ -1,0 +1,29 @@
+/*
+Theme Name: MGP Theme - Мастерская Генеральных Планов
+Theme URI: https://mgp.ooo
+Author: ООО «Мастерская генеральных планов»
+Author URI: https://mgp.ooo
+Description: Чистая корпоративная тема для сайта ООО «МГП». Разработана в строгом инженерном стиле без визуальных конструкторов, с поддержкой CPT (Услуги, Проекты, Партнеры, Ресурсы) и полей ACF.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: Proprietary
+Text Domain: mgp-theme
+*/
+
+:root {
+  --color-primary: #EA580C;
+  --color-primary-dark: #C2410C;
+  --color-graphite: #0F172A;
+  --color-graphite-light: #1E293B;
+  --color-bg-light: #F8FAFC;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1E293B;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
